@@ -41,6 +41,7 @@ func main() {
 	framesCounter := 0 // Used to count frames
 
 	//rl.SetTargetFPS(60)
+	rl.TraceLog(1, "start") // instead of fmt.Print("start")
 
 	for !rl.WindowShouldClose() {
 		rl.UpdateMusicStream(ambient)
